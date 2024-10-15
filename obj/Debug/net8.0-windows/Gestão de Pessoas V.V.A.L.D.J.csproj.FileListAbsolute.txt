@@ -1,0 +1,32 @@
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.exe
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.deps.json
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.runtimeconfig.json
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.pdb
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.csproj.AssemblyReference.cache
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão_de_Pessoas_V.V.A.L.D.J.Form1.resources
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.csproj.GenerateResource.cache
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.AssemblyInfoInputs.cache
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.AssemblyInfo.cs
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.csproj.CoreCompileInputs.cache
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.sourcelink.json
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gest_o d.D97241A7.Up2Date
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\refint\Gestão de Pessoas V.V.A.L.D.J.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.pdb
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.genruntimeconfig.cache
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\ref\Gestão de Pessoas V.V.A.L.D.J.dll
