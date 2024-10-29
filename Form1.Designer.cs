@@ -117,6 +117,7 @@
             btnExcluirFuncionario.TabIndex = 6;
             btnExcluirFuncionario.Text = "Excluir funcionario";
             btnExcluirFuncionario.UseVisualStyleBackColor = true;
+            btnExcluirFuncionario.Click += btnExcluirFuncionario_Click;
             // 
             // Form1
             // 
