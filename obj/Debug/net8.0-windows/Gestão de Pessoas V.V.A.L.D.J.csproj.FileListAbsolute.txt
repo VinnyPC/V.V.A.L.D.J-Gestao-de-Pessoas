@@ -30,3 +30,4 @@ C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.
 C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.pdb
 C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão de Pessoas V.V.A.L.D.J.genruntimeconfig.cache
 C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\ref\Gestão de Pessoas V.V.A.L.D.J.dll
+C:\Users\vinis\source\repos\Gestão de Pessoas V.V.A.L.D.J\Gestão de Pessoas V.V.A.L.D.J\obj\Debug\net8.0-windows\Gestão_de_Pessoas_V.V.A.L.D.J.FormAdicionarFuncionario.resources

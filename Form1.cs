@@ -24,7 +24,7 @@ public partial class Form1 : Form
             adapter.Fill(dataTable);
 
             dataGridView1.DataSource = dataTable;
-            dataGridView1.Columns["Id"].Visible = false; // Ocultar coluna ID, se necessário
+            dataGridView1.Columns["Id"].Visible = false;
         }
     }
 
@@ -51,5 +51,13 @@ public partial class Form1 : Form
     private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
     {
 
+    }
+
+    private void btnAdicionarFuncionario_Click(object sender, EventArgs e)
+    {
+        using (FormAdicionarFuncionario formAdicionar = new FormAdicionarFuncionario())
+        {
+            formAdicionar.ShowDialog();
+        }
     }
 }
