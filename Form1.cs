@@ -6,25 +6,54 @@ using System;
 
 public partial class Form1 : Form
 {
+    private MySqlConnection connection;
     private string connectionString = "Server=localhost;Database=VVALDJ;User ID=root;Password=root;";
     public Form1()
     {
         InitializeComponent();
         CarregarFuncionarios();
+        ContarFuncionarios();
     }
 
     private void CarregarFuncionarios()
     {
-        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        // se a conexao for nula ou estiver fechada ele abre a conexao
+        if (connection == null || connection.State == ConnectionState.Closed)
         {
+            connection = new MySqlConnection(connectionString);
             connection.Open();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM Funcionarios", connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable dataTable = new DataTable();
-            adapter.Fill(dataTable);
+        }
 
-            dataGridView1.DataSource = dataTable;
-            dataGridView1.Columns["Id"].Visible = false;
+        MySqlCommand command = new MySqlCommand("SELECT * FROM Funcionarios", connection);
+        MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+        DataTable dataTable = new DataTable();
+        adapter.Fill(dataTable);
+
+        dataGridView1.DataSource = dataTable;
+        dataGridView1.Columns["Id"].Visible = false;
+    }
+
+    //função que faz uma count no banco de dados e mostra no lbl quantos registros tem
+    private void ContarFuncionarios()
+    {
+        try
+        {
+            // se a conexao for nula ou estiver fechada ele abre a conexao
+            if (connection == null || connection.State == ConnectionState.Closed)
+            {
+                connection = new MySqlConnection(connectionString);
+                connection.Open();
+            }
+
+            using (var command = new MySqlCommand("SELECT COUNT(*) FROM Funcionarios", connection))
+            {
+                int quantidadeFuncionarios = Convert.ToInt32(command.ExecuteScalar());
+                lblFuncionariosQtd.Text = quantidadeFuncionarios.ToString();
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Erro ao contar funcionários: " + ex.Message);
         }
     }
 
@@ -92,6 +121,20 @@ public partial class Form1 : Form
         else
         {
             MessageBox.Show("Selecione pelo menos um funcionário para excluir.");
+        }
+    }
+
+    private void btnEditarFuncionario_Click(object sender, EventArgs e)
+    {
+        if (dataGridView1.SelectedRows.Count > 0)
+        {
+            int funcionarioId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
+            FormEditarFuncionario formEditar = new FormEditarFuncionario(funcionarioId, connection);
+            formEditar.Show();
+        }
+        else
+        {
+            MessageBox.Show("Selecione um funcionário para editar.");
         }
     }
 }

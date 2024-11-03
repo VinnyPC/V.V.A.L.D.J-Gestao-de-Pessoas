@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,18 +10,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Gestão_de_Pessoas_V.V.A.L.D.J
+
 {
     public partial class FormAdicionarFuncionario : Form
     {
+        
         public FormAdicionarFuncionario()
         {
             InitializeComponent();
             rbAddFuncionarioStatusAtivo.CheckedChanged += RadioButton_CheckedChanged;
             rbAddFuncionarioStatusDesligado.CheckedChanged += RadioButton_CheckedChanged;
             rbAddFuncionarioStatusAfastado.CheckedChanged += RadioButton_CheckedChanged;
+            
 
-    }
-
+        }
+        
+        
         private void lblFuncionarios_Click(object sender, EventArgs e)
         {
 
@@ -50,6 +55,7 @@ namespace Gestão_de_Pessoas_V.V.A.L.D.J
         {
 
         }
+        //método para que apareça a data de desligamento/afatastamento apenas se o checkbox estiver marcado
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (rbAddFuncionarioStatusDesligado.Checked || rbAddFuncionarioStatusAfastado.Checked)

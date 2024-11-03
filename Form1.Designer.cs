@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             lblFuncionarios = new Label();
-            lblFuncoes = new Label();
-            lblFuncionariosQtd = new Label();
-            lblFuncoesQtd = new Label();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewCheckBoxColumn();
             btnAdicionarFuncionario = new Button();
             btnExcluirFuncionario = new Button();
+            lblFuncionariosQtd = new Label();
+            btnEditarFuncionario = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -49,40 +48,6 @@
             lblFuncionarios.TabIndex = 0;
             lblFuncionarios.Text = "Funcionários:";
             lblFuncionarios.Click += lblFuncionarios_Click;
-            // 
-            // lblFuncoes
-            // 
-            lblFuncoes.AutoSize = true;
-            lblFuncoes.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFuncoes.Location = new Point(313, 40);
-            lblFuncoes.Name = "lblFuncoes";
-            lblFuncoes.Size = new Size(144, 45);
-            lblFuncoes.TabIndex = 1;
-            lblFuncoes.Text = "Funções:";
-            lblFuncoes.Click += lblFuncoes_Click;
-            // 
-            // lblFuncionariosQtd
-            // 
-            lblFuncionariosQtd.BorderStyle = BorderStyle.FixedSingle;
-            lblFuncionariosQtd.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFuncionariosQtd.Location = new Point(225, 40);
-            lblFuncionariosQtd.Name = "lblFuncionariosQtd";
-            lblFuncionariosQtd.Size = new Size(59, 45);
-            lblFuncionariosQtd.TabIndex = 2;
-            lblFuncionariosQtd.Text = "00";
-            lblFuncionariosQtd.TextAlign = ContentAlignment.MiddleCenter;
-            lblFuncionariosQtd.Click += lblFuncionariosQtd_Click;
-            // 
-            // lblFuncoesQtd
-            // 
-            lblFuncoesQtd.BorderStyle = BorderStyle.FixedSingle;
-            lblFuncoesQtd.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFuncoesQtd.Location = new Point(463, 40);
-            lblFuncoesQtd.Name = "lblFuncoesQtd";
-            lblFuncoesQtd.Size = new Size(59, 45);
-            lblFuncoesQtd.TabIndex = 3;
-            lblFuncoesQtd.Text = "00";
-            lblFuncoesQtd.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
@@ -119,17 +84,36 @@
             btnExcluirFuncionario.UseVisualStyleBackColor = true;
             btnExcluirFuncionario.Click += btnExcluirFuncionario_Click;
             // 
+            // lblFuncionariosQtd
+            // 
+            lblFuncionariosQtd.BorderStyle = BorderStyle.FixedSingle;
+            lblFuncionariosQtd.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFuncionariosQtd.Location = new Point(225, 40);
+            lblFuncionariosQtd.Name = "lblFuncionariosQtd";
+            lblFuncionariosQtd.Size = new Size(61, 45);
+            lblFuncionariosQtd.TabIndex = 7;
+            lblFuncionariosQtd.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnEditarFuncionario
+            // 
+            btnEditarFuncionario.Location = new Point(174, 124);
+            btnEditarFuncionario.Name = "btnEditarFuncionario";
+            btnEditarFuncionario.Size = new Size(156, 47);
+            btnEditarFuncionario.TabIndex = 8;
+            btnEditarFuncionario.Text = "Editar cadastro";
+            btnEditarFuncionario.UseVisualStyleBackColor = true;
+            btnEditarFuncionario.Click += btnEditarFuncionario_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1264, 681);
+            Controls.Add(btnEditarFuncionario);
+            Controls.Add(lblFuncionariosQtd);
             Controls.Add(btnExcluirFuncionario);
             Controls.Add(btnAdicionarFuncionario);
             Controls.Add(dataGridView1);
-            Controls.Add(lblFuncoesQtd);
-            Controls.Add(lblFuncionariosQtd);
-            Controls.Add(lblFuncoes);
             Controls.Add(lblFuncionarios);
             Name = "Form1";
             Text = "Form1";
@@ -141,12 +125,11 @@
         #endregion
 
         private Label lblFuncionarios;
-        private Label lblFuncoes;
-        private Label lblFuncionariosQtd;
-        private Label lblFuncoesQtd;
         private DataGridView dataGridView1;
         private DataGridViewCheckBoxColumn Column1;
         private Button btnAdicionarFuncionario;
         private Button btnExcluirFuncionario;
+        private Label lblFuncionariosQtd;
+        private Button btnEditarFuncionario;
     }
 }
