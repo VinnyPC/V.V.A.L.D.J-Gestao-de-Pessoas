@@ -199,6 +199,7 @@
             dtpEditFuncionarioDataDesligamentoAfastamento.Size = new Size(200, 23);
             dtpEditFuncionarioDataDesligamentoAfastamento.TabIndex = 4;
             dtpEditFuncionarioDataDesligamentoAfastamento.Visible = false;
+            dtpEditFuncionarioDataDesligamentoAfastamento.ValueChanged += dtpEditFuncionarioDataDesligamentoAfastamento_ValueChanged;
             // 
             // lblAddFuncionarioDataDesligamentoAfastamento
             // 
@@ -309,6 +310,7 @@
             txtEditFuncionarioNome.Name = "txtEditFuncionarioNome";
             txtEditFuncionarioNome.Size = new Size(448, 23);
             txtEditFuncionarioNome.TabIndex = 10;
+            txtEditFuncionarioNome.TextChanged += txtEditFuncionarioNome_TextChanged;
             // 
             // lblAddFuncionariosTitle
             // 
@@ -320,7 +322,7 @@
             lblAddFuncionariosTitle.TabIndex = 27;
             lblAddFuncionariosTitle.Text = "Editar cadastro";
             // 
-            // formEditar
+            // FormEditarFuncionario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -330,7 +332,7 @@
             Controls.Add(gbStatusFuncionario);
             Controls.Add(gbDadosPessoais);
             Controls.Add(lblAddFuncionariosTitle);
-            Name = "formEditar";
+            Name = "FormEditarFuncionario";
             Text = "formEditar";
             gbDadosProfissionais.ResumeLayout(false);
             gbDadosProfissionais.PerformLayout();

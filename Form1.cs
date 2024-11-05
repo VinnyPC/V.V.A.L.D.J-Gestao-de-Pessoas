@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System;
+using System.Diagnostics;
 
 public partial class Form1 : Form
 {
@@ -129,7 +130,8 @@ public partial class Form1 : Form
         if (dataGridView1.SelectedRows.Count > 0)
         {
             int funcionarioId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
-            FormEditarFuncionario formEditar = new FormEditarFuncionario(funcionarioId, connection);
+            //MessageBox.Show("FuncionarioId:", funcionarioId.ToString());
+            FormEditarFuncionario formEditar = new FormEditarFuncionario(funcionarioId);
             formEditar.Show();
         }
         else
