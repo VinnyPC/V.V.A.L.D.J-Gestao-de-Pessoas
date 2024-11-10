@@ -13,8 +13,8 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         CarregarFuncionarios();
-        ContarFuncionarios();
     }
+
 
     private void CarregarFuncionarios()
     {
@@ -138,5 +138,15 @@ public partial class Form1 : Form
         {
             MessageBox.Show("Selecione um funcionário para editar.");
         }
+    }
+
+    private void lblFuncionariosQtd_Click_1(object sender, EventArgs e)
+    {
+
+    }
+
+    private void pictureBox1_Click(object sender, EventArgs e)
+    {
+
     }
 }

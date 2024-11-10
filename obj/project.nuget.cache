@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bgxBLC1AQUA=",
+  "dgSpecHash": "0FrIB1/htjg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinis\\source\\repos\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J.csproj",
+  "projectFilePath": "C:\\Users\\vinis\\source\\repos\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinis\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\vinis\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
