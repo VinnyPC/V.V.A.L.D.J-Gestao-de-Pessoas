@@ -68,6 +68,7 @@
             btnAddFuncionarioSalvar.TabIndex = 31;
             btnAddFuncionarioSalvar.Text = "Salvar";
             btnAddFuncionarioSalvar.UseVisualStyleBackColor = true;
+            btnAddFuncionarioSalvar.Click += btnAddFuncionarioSalvar_Click;
             // 
             // gbDadosProfissionais
             // 

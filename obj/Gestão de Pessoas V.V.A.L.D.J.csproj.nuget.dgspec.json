@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinis\\source\\repos\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj": {}
+    "C:\\Users\\vinis\\Desktop\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinis\\source\\repos\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj": {
+    "C:\\Users\\vinis\\Desktop\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinis\\source\\repos\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj",
+        "projectUniqueName": "C:\\Users\\vinis\\Desktop\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj",
         "projectName": "Gestão de Pessoas V.V.A.L.D.J",
-        "projectPath": "C:\\Users\\vinis\\source\\repos\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj",
+        "projectPath": "C:\\Users\\vinis\\Desktop\\V.V.A.L.D.J-Gestao-de-Pessoas\\Gestão de Pessoas V.V.A.L.D.J.csproj",
         "packagesPath": "C:\\Users\\vinis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinis\\source\\repos\\Gestão de Pessoas V.V.A.L.D.J\\Gestão de Pessoas V.V.A.L.D.J\\V.V.A.L.D.J-Gestao-de-Pessoas\\obj\\",
+        "outputPath": "C:\\Users\\vinis\\Desktop\\V.V.A.L.D.J-Gestao-de-Pessoas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinis\\AppData\\Roaming\\NuGet\\NuGet.Config",

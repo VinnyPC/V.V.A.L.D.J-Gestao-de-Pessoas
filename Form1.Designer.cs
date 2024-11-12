@@ -37,6 +37,8 @@
             dataGridView1 = new DataGridView();
             mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
+            btnRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -77,7 +79,7 @@
             lblFuncionariosQtd.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblFuncionariosQtd.Location = new Point(222, 159);
             lblFuncionariosQtd.Name = "lblFuncionariosQtd";
-            lblFuncionariosQtd.Size = new Size(91, 40);
+            lblFuncionariosQtd.Size = new Size(99, 40);
             lblFuncionariosQtd.TabIndex = 7;
             lblFuncionariosQtd.TextAlign = ContentAlignment.MiddleCenter;
             lblFuncionariosQtd.Click += lblFuncionariosQtd_Click_1;
@@ -103,6 +105,7 @@
             // 
             // btnExcluirFuncionario
             // 
+            btnExcluirFuncionario.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnExcluirFuncionario.BackColor = Color.FromArgb(127, 124, 249);
             btnExcluirFuncionario.FlatAppearance.BorderColor = Color.FromArgb(105, 102, 227);
             btnExcluirFuncionario.FlatAppearance.BorderSize = 2;
@@ -126,9 +129,9 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(15, 288);
+            dataGridView1.Location = new Point(15, 362);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1237, 381);
+            dataGridView1.Size = new Size(1237, 307);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -141,20 +144,53 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(15, 26);
+            pictureBox1.Location = new Point(498, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(225, 77);
+            pictureBox1.Size = new Size(266, 98);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Left;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(15, 319);
+            label1.Name = "label1";
+            label1.Size = new Size(111, 40);
+            label1.TabIndex = 10;
+            label1.Text = "Dados:";
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnRefresh.BackColor = Color.FromArgb(127, 124, 249);
+            btnRefresh.FlatAppearance.BorderColor = Color.FromArgb(105, 102, 227);
+            btnRefresh.FlatAppearance.BorderSize = 2;
+            btnRefresh.FlatStyle = FlatStyle.Flat;
+            btnRefresh.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            btnRefresh.ForeColor = Color.White;
+            btnRefresh.Image = (Image)resources.GetObject("btnRefresh.Image");
+            btnRefresh.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRefresh.Location = new Point(1205, 299);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(47, 47);
+            btnRefresh.TabIndex = 11;
+            btnRefresh.TextAlign = ContentAlignment.MiddleRight;
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1264, 681);
+            Controls.Add(btnRefresh);
+            Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(lblFuncionariosQtd);
             Controls.Add(btnAdicionarFuncionario);
@@ -180,5 +216,7 @@
         private DataGridView dataGridView1;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private PictureBox pictureBox1;
+        private Label label1;
+        private Button btnRefresh;
     }
 }

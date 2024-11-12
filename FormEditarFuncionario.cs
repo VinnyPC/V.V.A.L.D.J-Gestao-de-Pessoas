@@ -120,5 +120,91 @@ namespace Gestão_de_Pessoas_V.V.A.L.D.J
         {
 
         }
+
+        private void btnAddFuncionarioSalvar_Click(object sender, EventArgs e)
+        {
+            if (connection == null || connection.State == ConnectionState.Closed)
+            {
+                connection = new MySqlConnection(connectionString);
+                connection.Open();
+            }
+
+            try
+            {
+                // Coletando os dados dos controles
+                var funcionarioId = this.funcionarioId;  // ID do funcionário a ser editado
+                var funcionarioNome = txtEditFuncionarioNome.Text;
+                var cpfFuncionario = txtEditFuncionarioCpf.Text;
+                var Nascimento = dtpEditFuncionarioNascimento.Value;
+                var endereco = txtEditFuncionarioEndereco.Text;
+                var Admissao = dateEditFuncionarioAdmissao.Value;
+                var funcao = txtEditFuncionarioFuncao.Text;
+                var qualificacao = txtEditFuncionarioQualificacao.Text;
+                var salarioInicial = Convert.ToDecimal(txtEditFuncionarioSalarioInicial.Text);
+                var situacao = "";
+
+                if (rbEditFuncionarioStatusAfastado.Checked)
+                {
+                    situacao = "Afastado";
+                }
+                else if (rbEditFuncionarioStatusAtivo.Checked)
+                {
+                    situacao = "Ativo";
+                }
+                else if (rbEditFuncionarioStatusDesligado.Checked)
+                {
+                    situacao = "Desligado";
+                }
+
+                // Data de desligamento ou afastamento, caso exista
+                var dataDesligamentoAfastamento = dtpEditFuncionarioDataDesligamentoAfastamento.Visible ?
+                                                  dtpEditFuncionarioDataDesligamentoAfastamento.Value :
+                                                  (DateTime?)null;
+
+                // Query SQL para atualizar os dados do funcionário
+                string query = @"UPDATE Funcionarios 
+                         SET Nome = @Nome, 
+                             CPF = @CPF, 
+                             Nascimento = @Nascimento, 
+                             Endereco = @Endereco, 
+                             Admissao = @Admissao, 
+                             Funcao = @Funcao, 
+                             Qualificacao = @Qualificacao, 
+                             SalarioInicial = @SalarioInicial, 
+                             Situacao = @Situacao, 
+                             Desligamento = @Desligamento
+                         WHERE ID = @ID";
+
+                using (var command = new MySqlCommand(query, connection))
+                {
+                    // Adicionando os parâmetros ao comando SQL
+                    command.Parameters.AddWithValue("@ID", funcionarioId);
+                    command.Parameters.AddWithValue("@Nome", funcionarioNome);
+                    command.Parameters.AddWithValue("@CPF", cpfFuncionario);
+                    command.Parameters.AddWithValue("@Nascimento", Nascimento);
+                    command.Parameters.AddWithValue("@Endereco", endereco);
+                    command.Parameters.AddWithValue("@Admissao", Admissao);
+                    command.Parameters.AddWithValue("@Funcao", funcao);
+                    command.Parameters.AddWithValue("@Qualificacao", qualificacao);
+                    command.Parameters.AddWithValue("@SalarioInicial", salarioInicial);
+                    command.Parameters.AddWithValue("@Situacao", situacao);
+                    command.Parameters.AddWithValue("@Desligamento",
+                        (object)dataDesligamentoAfastamento ?? DBNull.Value);
+
+                    // Executando a query para atualizar o funcionário
+                    command.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Funcionário atualizado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao atualizar funcionário: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
     }
 }

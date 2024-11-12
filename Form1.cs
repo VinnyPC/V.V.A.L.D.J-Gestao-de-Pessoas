@@ -149,4 +149,9 @@ public partial class Form1 : Form
     {
 
     }
+
+    private void btnRefresh_Click(object sender, EventArgs e)
+    {
+        CarregarFuncionarios();
+    }
 }

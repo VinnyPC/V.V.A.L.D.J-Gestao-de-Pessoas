@@ -331,6 +331,7 @@ namespace Gestão_de_Pessoas_V.V.A.L.D.J
             btnAddFuncionarioSalvar.TabIndex = 26;
             btnAddFuncionarioSalvar.Text = "Salvar";
             btnAddFuncionarioSalvar.UseVisualStyleBackColor = true;
+            btnAddFuncionarioSalvar.Click += btnAddFuncionarioSalvar_Click;
             // 
             // FormAdicionarFuncionario
             // 
