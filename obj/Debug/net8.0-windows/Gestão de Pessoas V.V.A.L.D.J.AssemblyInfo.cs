@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gestão de Pessoas V.V.A.L.D.J")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5785b9f49eb1111f0e210af88874f8e86b41507")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc97c5f27c7815807c4b13ab44c658104cd7f012")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gestão de Pessoas V.V.A.L.D.J")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gestão de Pessoas V.V.A.L.D.J")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

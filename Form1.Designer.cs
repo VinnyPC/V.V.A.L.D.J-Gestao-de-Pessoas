@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblFuncionarios = new Label();
             btnAdicionarFuncionario = new Button();
-            lblFuncionariosQtd = new Label();
             btnEditarFuncionario = new Button();
             btnExcluirFuncionario = new Button();
             dataGridView1 = new DataGridView();
@@ -39,6 +38,7 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             btnRefresh = new Button();
+            lblFuncionariosQtd = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -72,17 +72,6 @@
             btnAdicionarFuncionario.TextAlign = ContentAlignment.MiddleRight;
             btnAdicionarFuncionario.UseVisualStyleBackColor = false;
             btnAdicionarFuncionario.Click += btnAdicionarFuncionario_Click;
-            // 
-            // lblFuncionariosQtd
-            // 
-            lblFuncionariosQtd.BorderStyle = BorderStyle.FixedSingle;
-            lblFuncionariosQtd.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFuncionariosQtd.Location = new Point(222, 159);
-            lblFuncionariosQtd.Name = "lblFuncionariosQtd";
-            lblFuncionariosQtd.Size = new Size(99, 40);
-            lblFuncionariosQtd.TabIndex = 7;
-            lblFuncionariosQtd.TextAlign = ContentAlignment.MiddleCenter;
-            lblFuncionariosQtd.Click += lblFuncionariosQtd_Click_1;
             // 
             // btnEditarFuncionario
             // 
@@ -184,15 +173,26 @@
             btnRefresh.UseVisualStyleBackColor = false;
             btnRefresh.Click += btnRefresh_Click;
             // 
+            // lblFuncionariosQtd
+            // 
+            lblFuncionariosQtd.BorderStyle = BorderStyle.FixedSingle;
+            lblFuncionariosQtd.Font = new Font("Consolas", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFuncionariosQtd.Location = new Point(222, 154);
+            lblFuncionariosQtd.Name = "lblFuncionariosQtd";
+            lblFuncionariosQtd.Size = new Size(95, 45);
+            lblFuncionariosQtd.TabIndex = 12;
+            lblFuncionariosQtd.Text = "99";
+            lblFuncionariosQtd.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1264, 681);
+            Controls.Add(lblFuncionariosQtd);
             Controls.Add(btnRefresh);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Controls.Add(lblFuncionariosQtd);
             Controls.Add(btnAdicionarFuncionario);
             Controls.Add(btnEditarFuncionario);
             Controls.Add(btnExcluirFuncionario);
@@ -210,7 +210,6 @@
 
         private Label lblFuncionarios;
         private Button btnAdicionarFuncionario;
-        private Label lblFuncionariosQtd;
         private Button btnEditarFuncionario;
         private Button btnExcluirFuncionario;
         private DataGridView dataGridView1;
@@ -218,5 +217,6 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Button btnRefresh;
+        private Label lblFuncionariosQtd;
     }
 }
